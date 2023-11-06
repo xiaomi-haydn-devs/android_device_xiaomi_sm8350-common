@@ -50,13 +50,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <instance>default</instance>
        </interface>
    </hal>
-   <hal format="hidl" optional="true">
+   <hal format="aidl" optional="true">
        <name>android.hardware.drm</name>
-       <version>1.0-4</version>
-       <interface>
-         <name>ICryptoFactory</name>
-         <instance>clearkey</instance>
-       </interface>
+       <version>1</version>
        <interface>
          <name>IDrmFactory</name>
          <instance>clearkey</instance>
