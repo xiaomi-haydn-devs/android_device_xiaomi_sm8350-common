@@ -17,6 +17,10 @@ dontaudit system_app system_suspend_control_internal_service:service_manager fin
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
 
+# To allow Settings to find and bind Google Battery HAL
+allow system_app hal_googlebattery_service:service_manager find;
+binder_call(system_app, hal_googlebattery)
+
 # Memory
 r_dir_file(system_app, proc_pagetypeinfo)
 
