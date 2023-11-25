@@ -4,6 +4,10 @@ binder_call(platform_app, vendor_hal_soter_qti)
 # Audio
 get_prop(platform_app, audio_config_prop)
 
+# To find and bind hal_wlc
+allow platform_app hal_wlc_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_wlc)
+
 # Leica Camera
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_camera_sensor_prop)
