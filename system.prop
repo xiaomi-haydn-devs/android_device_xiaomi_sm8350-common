@@ -14,6 +14,10 @@ persist.sys.fuse.passthrough.enable=true
 # FS-verity
 ro.apk_verity.mode=2
 
+# Fling velocities
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+
 # Log
 persist.log.tag.CVP=S
 persist.log.tag.CamX=S
