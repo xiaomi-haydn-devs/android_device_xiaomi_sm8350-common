@@ -15,8 +15,8 @@ persist.sys.fuse.passthrough.enable=true
 ro.apk_verity.mode=2
 
 # Fling velocities
-ro.min.fling_velocity=160 
-ro.max.fling_velocity=20000
+ro.min.fling_velocity=70
+ro.max.fling_velocity=21000
 
 # Log
 persist.log.tag.CVP=S
