@@ -8,9 +8,14 @@
     <bool name="config_pocketModeSupported">false</bool>
     <bool name="config_pocketUseLightSensor">false</bool>
 
-    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastchg_mode</string>
-
-    <!-- Expected value from fast charging status file  -->
-    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+  <!-- Array of:
+      - Path to fast charging status file
+      - Delimiter ";"
+      - Value if fast charging is active
+      Used to detect whether an oem fast charger is active
+      Example: <item>/sys/class/power_supply/battery/fastchg_status;1</item>
+  -->
+  <string-array name="config_oemFastChargerStatusPaths" translatable="false">
+      <item>/sys/class/qcom-battery/fastchg_mode;1</item>
+  </string-array>
 </resources>
