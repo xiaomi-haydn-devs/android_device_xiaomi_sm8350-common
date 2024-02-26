@@ -7,9 +7,6 @@ persist.vendor.cne.feature=1
 # Graphics
 debug.sf.enable_hwc_vds=0
 
-# FUSE
-persist.sys.fuse.passthrough.enable=true
-
 # FS-verity
 ro.apk_verity.mode=2
 
