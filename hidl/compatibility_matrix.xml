@@ -34,6 +34,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+       <name>android.hardware.ir</name>
+       <version>1</version>
+       <interface>
+           <name>IConsumerIr</name>
+           <instance>default</instance>
+       </interface>
+    </hal>
     <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
